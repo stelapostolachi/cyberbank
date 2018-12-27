@@ -3,6 +3,7 @@ var Base = function(){
     this.navigateToHome=function(homeUrl){
         browser.get(this.homeUrl);
     }
+    
 
 }
 module.exports= new Base();

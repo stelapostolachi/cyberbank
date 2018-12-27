@@ -16,8 +16,8 @@ exports.config = {
   },
  
   
-  //specs: ['../Tests/CruiseDeals.spec.js'], 
-  specs: ['../Tests/PracticeTest.spec.js'],
+  specs: ['../Tests/CruiseDeals.spec.js'], 
+  //specs: ['../Tests/PracticeTest.spec.js'],
 
 //   suites:{
 //   smoke: ['../Tests/BankManagerSimple.spec.js', '../Tests/demo.spec.js'],

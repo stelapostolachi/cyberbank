@@ -5,22 +5,18 @@ require('../Utilities/CustomLocators.js');
 
 describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
 
-    
-
     beforeEach(function(){
         browser.waitForAngularEnabled(false);
         Base.navigateToHome();
-         
-        });
+    });
+       
     
     
         it('should navigate to NCL web page and check the title', () => {
-           expect(browser.getTitle()).toEqual('Cruises & Cruise Deals | Caribbean Cruise Vacations | Norwegian Cruise Line');
-        
-          
+          expect(browser.getTitle()).toEqual('Cruises & Cruise Deals | Plan Your Cruise Vacation | NCL');
         });
           
-        it('should click on Shop our Cruise Deals and check Text of Sign up to never miss a cruise deal!', () => {
+        xit('should click on Shop our Cruise Deals and check Text of Sign up to never miss a cruise deal!', () => {
            CruiseDealsPage.cruiseDealsButton.click();
            CruiseDealsPage.myAlert.click();
            expect(CruiseDealsPage.neverMissLogo.getText()).toEqual('FREE AIR & SEA OFFERS');
@@ -29,7 +25,7 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
         });
         
     
-        it('should check if Free Airfare Offers is present', () => {
+        xit('should check if Free Airfare Offers is present', () => {
            CruiseDealsPage.cruiseDealsButton.click();
            expect(CruiseDealsPage.freeOffers.isPresent()).toBe(true);
            
@@ -39,7 +35,7 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
 
     
 
-        it('should be able to click on discover Harvest Caye and click on details.', () => {
+        xit('should be able to click on discover Harvest Caye and click on details.', () => {
             CruiseDealsPage.carvestCaye.click();
             browser.actions().mouseMove(CruiseDealsPage.viewDealsClick).perform();
             browser.sleep(2000);
@@ -70,7 +66,7 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
             
         });
 
-        it(' should click on Norwegian Joy and get Ship Information.', () => {
+        xit(' should click on Norwegian Joy and get Ship Information.', () => {
             CruiseDealsPage.norwegianJoy.click();
             CruiseDealsPage.shipInfo.each((information)=>{
                 information.getText().then((result)=>{
@@ -110,7 +106,7 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
             
          });
 
-         describe('Pop up window.', () => {
+         xdescribe('Pop up window.', () => {
              beforeAll(function(){
                 Base.navigateToHome();
              })
@@ -145,7 +141,7 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
 
 
     
-            it('should switch back to previews page.', () => {
+            xit('should switch back to previews page.', () => {
                 browser.switchTo().window(windowhandle1[0]);
                 browser.sleep(2000);
             });
@@ -156,9 +152,9 @@ describe('Check Shop Our Cruise Deals & Discover Horvest Caye buttons.', () => {
                 
                 
                 
-                 
+        });     
              
-        });
+        
 
 
              

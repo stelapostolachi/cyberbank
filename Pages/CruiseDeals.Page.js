@@ -1,8 +1,8 @@
 require('../Utilities/customLocators.js');
 
 var CruiseDealsPage=function(){
-    this.cruiseDealsButton= $('.sushi>li:nth-child(1)>div>a');
-    this.myAlert = $('#simplemodal-close-img>i');
+    this.cruiseDealsButton= element(by.linkText('Shop Now'));
+    this.myAlert = $('.ngi-icon-times-thin');
     this.neverMissLogo = $('.content-header>h1');
     this.freeOffers=element.all(by.css('#marketing-slider>li:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(3)>div:nth-child(2)>ol'));
     this.viewDeal= $('.btn-cta.btn-primary.btn-large');

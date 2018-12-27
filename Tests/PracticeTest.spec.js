@@ -4,17 +4,13 @@ require('../Utilities/CustomLocators.js');
 
 
  describe('Hello world display', () => {
-     beforeEach(function(){
+     beforeAll(function(){
         browser.waitForAngularEnabled(false);
         browser.get('https://translate.google.com/');
 
     });
 
-        it('should login to google translate', () => {
-         browser.waitForAngularEnabled(false);
-         browser.get('https://translate.google.com/');
-         
-         });
+        
 
          it('should behave...', () => {
              element(by.id('gt-sl-gms')).click();
